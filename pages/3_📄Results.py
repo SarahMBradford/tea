@@ -9,7 +9,7 @@ model_accuracy = pd.DataFrame(list(zip(model_names, accuracy_scores)), columns=[
 model_accuracy.style.highlight_max(color = 'lightgreen', axis = 0)
 col1, col2 = st.columns(2)
 with col1:
-    st.image(Image.open('/Users/sarahbradford/Downloads/tea_classification-main/tea_please.jpg'), use_column_width=True)
+    st.image(Image.open('tea_please.jpg'), use_column_width=True)
 with col2:
     st.dataframe(model_accuracy.style.highlight_max(color = 'lightgreen', axis = 0))
 st.subheader("Go ahead and order that tea! Now that you have have some class!")
