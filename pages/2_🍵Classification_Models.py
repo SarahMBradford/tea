@@ -28,7 +28,7 @@ import plotly.graph_objects as go
 from sklearn.metrics import precision_recall_curve
 
 
-starbucks_drinks = pd.read_csv("/Users/sarahbradford/Downloads/starbucks_drinks.csv")
+starbucks_drinks = pd.read_csv("starbucks_drinks.csv")
 starbucks_drinks.head()
 
 starbucks_drinks['Caffeine (mg)'] = pd.to_numeric(starbucks_drinks['Caffeine (mg)'], errors='coerce')
