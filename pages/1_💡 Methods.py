@@ -16,7 +16,7 @@ import streamlit as st
 import prettytable
 from PIL import Image
 
-starbucks_drinks = pd.read_csv("/Users/sarahbradford/Downloads/starbucks_drinks.csv")
+starbucks_drinks = pd.read_csv("starbucks_drinks.csv")
 starbucks_drinks.head()
 
 starbucks_drinks['Caffeine (mg)'] = pd.to_numeric(starbucks_drinks['Caffeine (mg)'], errors='coerce')
@@ -62,7 +62,7 @@ st.title("Methods")
 st.subheader("Data Cleaning & Preprocessing")
 st.write("The data was cleaned and preprocessed using the following methods:")
 st.write("1. The data was imported into a pandas dataframe.")
-starbucks_drinks = pd.read_csv("/Users/sarahbradford/Downloads/starbucks_drinks.csv")
+starbucks_drinks = pd.read_csv("starbucks_drinks.csv")
 starbucks_dataframe = st.checkbox("Show Starbucks Dataframe")
 if starbucks_dataframe==True:
     st.write(starbucks_drinks)
